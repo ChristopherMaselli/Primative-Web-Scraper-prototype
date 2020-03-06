@@ -57,9 +57,6 @@ stripped_tiernames = [tier.text.strip() for tier in tier_headlines]
 product_names = soup.select(".dd-image-box-caption")
 stripped_product_names = [prodname.text.strip() for prodname in tier_headlines]
 
-# Now get the prices from the products in the soup
-
-
 # print(tiers["tier1"]["products"])
 
 for tiername, tierinfo in tiers.items():  # Use "items()" for Dictionaries, "enumerate" for Lists
